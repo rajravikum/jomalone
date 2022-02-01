@@ -1,4 +1,5 @@
 import { FieldConfig, GenericFieldHTMLAttributes } from 'formik';
+import React from 'react';
 
 type IsFirstType = {
   isFirst?: boolean;
@@ -22,3 +23,16 @@ export type FieldsProps<T> = {
   GenericFieldHTMLAttributes;
 
 export type IsFirstOrLastProps = IsFirstType | IsLastType;
+
+export type ProviderType = {
+  children: React.ReactElement;
+};
+
+export type LoadingType = {
+  type: string;
+  processId?: number;
+};
+
+export type ErrorType = {
+  error?: Error;
+} & LoadingType;
