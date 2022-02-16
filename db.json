@@ -29,6 +29,13 @@
       "name": "Yagnesh Modh",
       "gender": "male",
       "id": 4
+    },
+    {
+      "email": "hafis636@gmail.com",
+      "password": "$2a$10$IQH/0teW.O6Ntaxu8mxSA./w.rDEeJwdtwwF1BUNHi4Y4bZNSKgKi",
+      "name": "Hafis Ahamed",
+      "gender": "male",
+      "id": 5
     }
   ],
   "todo-list": [

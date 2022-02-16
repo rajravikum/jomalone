@@ -16,6 +16,8 @@ import {
   LOAD_PRODUCTS_FAIL,
   LOAD_PRODUCTS_REQUEST,
   LOAD_PRODUCTS_SUCCESS,
+  LOAD_SINGLE_PRODUCT_REQUEST,
+  LOAD_SINGLE_PRODUCT_SUCCESS,
   LOGIN_FAIL,
   LOGIN_REQUEST,
   LOGIN_SUCCESS,
@@ -39,7 +41,7 @@ export type LogoutRequestActionType = {
 };
 
 export type LoadProductSuccessActionType = {
-  type: LOAD_PRODUCTS_SUCCESS;
+  type: LOAD_PRODUCTS_SUCCESS | LOAD_SINGLE_PRODUCT_SUCCESS;
   data: ProductType[];
   processId?: never;
 };
@@ -52,9 +54,9 @@ export type LoadCartSuccessActionType = {
 
 export type CartItemSuccess = {
   type:
-    | ADD_CART_ITEM_SUCCESS
-    | UPDATE_CART_ITEM_SUCCESS
-    | DELETE_CART_ITEM_SUCCESS;
+  | ADD_CART_ITEM_SUCCESS
+  | UPDATE_CART_ITEM_SUCCESS
+  | DELETE_CART_ITEM_SUCCESS;
   cartItem: CartType;
   processId: number;
 };
@@ -64,9 +66,8 @@ export type LoadRequestActionType = {
   processId?: never;
   cartItem?: never;
 };
-
 export type AddCartItemRequestActionType = {
-  type: ADD_CART_ITEM_REQUEST;
+  type: ADD_CART_ITEM_REQUEST | LOAD_SINGLE_PRODUCT_REQUEST;
   processId: number;
   cartItem?: never;
 };
@@ -109,11 +110,11 @@ export type RequestActionType =
 
 export type LoadErrorActionType = {
   type:
-    | LOAD_PRODUCTS_FAIL
-    | LOAD_CART_FAIL
-    | LOGIN_FAIL
-    | REGISTER_FAIL
-    | LOGOUT_FAIL;
+  | LOAD_PRODUCTS_FAIL
+  | LOAD_CART_FAIL
+  | LOGIN_FAIL
+  | REGISTER_FAIL
+  | LOGOUT_FAIL;
   error: string;
   processId?: never;
   key?: never;
@@ -128,11 +129,11 @@ export type ModifyCartErrorActionType = {
 
 export type BaseErrorActionType = {
   type:
-    | LOAD_PRODUCTS_FAIL
-    | LOAD_CART_FAIL
-    | ADD_CART_ITEM_FAIL
-    | UPDATE_CART_ITEM_FAIL
-    | DELETE_CART_ITEM_FAIL;
+  | LOAD_PRODUCTS_FAIL
+  | LOAD_CART_FAIL
+  | ADD_CART_ITEM_FAIL
+  | UPDATE_CART_ITEM_FAIL
+  | DELETE_CART_ITEM_FAIL;
   processId?: number;
   error: string;
   key?: never;

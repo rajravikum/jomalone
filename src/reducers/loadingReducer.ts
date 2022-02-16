@@ -19,6 +19,7 @@ import {
   LOGOUT_REQUEST,
   REGISTER_REQUEST,
   UPDATE_CART_ITEM_REQUEST,
+  LOAD_SINGLE_PRODUCT_REQUEST
 } from 'constants/actionTypes';
 import { RegisterInitValuesType } from 'Pages/Register/registerUtils';
 
@@ -26,6 +27,10 @@ export const LoadProductRequestAction = (): LoadRequestActionType => ({
   type: LOAD_PRODUCTS_REQUEST,
 });
 
+export const LoadSingleProductRequestAction = (processId: number): AddCartItemRequestActionType => ({
+  type: LOAD_SINGLE_PRODUCT_REQUEST,
+  processId
+});
 export const LoadCartRequestAction = (): LoadRequestActionType => ({
   type: LOAD_CART_REQUEST,
 });

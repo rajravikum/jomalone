@@ -38,7 +38,7 @@ function* loadCart() {
   try {
     const res: AxiosResponse<CartType[]> = yield call(
       axiosInstance.get,
-      '660/cart',
+      'cart',
     );
     yield put(LoadCartSuccessAction(res.data));
   } catch (error) {

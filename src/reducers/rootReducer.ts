@@ -10,6 +10,7 @@ import {
 import cartReducer from './cartReducer';
 import errorReducer from './errorReducer';
 import loadingReducer from './loadingReducer';
+import productReducer from './productReducer';
 import productsReducer from './productsReducer';
 
 export type RootReducerType = {
@@ -17,6 +18,7 @@ export type RootReducerType = {
   cart: CartType[];
   error: any;
   loading: any;
+  product: ProductType[];
 };
 
 export const rootInitialState = {
@@ -24,6 +26,7 @@ export const rootInitialState = {
   cart: [],
   error: {},
   loading: {},
+  product: []
 };
 
 export type RootAction =
@@ -48,5 +51,6 @@ export default (
     ),
     loading: loadingReducer(state.loading, action as RequestActionType),
     error: errorReducer(state.error, action as ErrorActionType),
+    product: productReducer(state.product, action as LoadProductSuccessActionType)
   };
 };
