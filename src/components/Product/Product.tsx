@@ -1,7 +1,6 @@
-import React, { ChangeEvent, memo } from 'react';
+import React, { ChangeEvent, memo, useState } from 'react';
 import { ProductType } from 'types/productsTypes';
-import cn from 'classnames';
-import Rating from '@components/Rating';
+import CustomPopup from "@components/Popup";
 import { CartType } from 'types/cartTypes';
 
 export type ProductProps = {
@@ -36,32 +35,33 @@ const Product = ({
       updateCartItem({ ...cartItem, quantity: Number(event.target.value) });
     }
   };
-
+  
+        
   return (
     <div key={id} className="group relative">
-      <div className="w-full min-h-80 bg-gray-200 aspect-w-1 aspect-h-1 rounded-md overflow-hidden group-hover:opacity-75 lg:h-80 lg:aspect-none">
+      <div className="w-full min-h-80 bg-gray-200 aspect-w-1 rounded-md overflow-hidden group-hover:opacity-75 lg:aspect-none">
         <img
           src={image}
           alt={title}
-          className="w-full h-full object-center object-cover lg:w-full lg:h-full"
+          className="w-full h-96 object-center object-cover bg-[#FCF8EF]"
         />
       </div>
-      <div className="mt-4 flex justify-between">
+      <div className="mt-4 justify-between">
         <div>
-          <h3 className="text-sm text-gray-700">
+          <h3 className="text-lg mb-10 text-stone-900 h-10 text-center">
             <a href={`/product/${id}`}>
               <span aria-hidden="true" className="absolute inset-0" />
               {title}
             </a>
           </h3>
-          <p className="mt-1 text-sm text-gray-500">
+          <p className="mt-1 text-lg mb-5 text-stone-900 text-center">
             {new Intl.NumberFormat('en-US', {
               style: 'currency',
               currency: 'USD',
             }).format(price)}
           </p>
-          <div className="mt-6">
-            <Rating {...rating} />
+          <div className="fixed relative m-2 h-50% bg-transparent border-solid border-2 border-zinc-200 left-0 bottom-0 w-full p-3 text-center text-white uppercase text-bold">
+              <button className="text-stone-900" > Quick Shop</button>
           </div>
         </div>
       </div>

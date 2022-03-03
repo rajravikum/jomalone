@@ -1,6 +1,8 @@
 import Product from '@components/Product';
 import React, { memo, useEffect } from 'react';
 import { ProductType } from 'types/productsTypes';
+import Header from "@components/Header";
+import Footer from "@components/Footer";
 
 type Props = {
   products: ProductType[];
@@ -16,8 +18,9 @@ const Home = ({ products, loadProducts, loadCart, loading }: Props) => {
   }, [loadProducts, loadCart]);
 
   return (
-    <div className="bg-white">
-      <div className="max-w-2xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
+    <><Header></Header>
+    <div className="bg-transparent">
+      <div className="mx-auto px-4 sm:px-6 lg:max-w-7xl lg:px-8">
 
         <div className="mt-6 grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
           {loading['LOAD_PRODUCTS'] && (
@@ -30,7 +33,7 @@ const Home = ({ products, loadProducts, loadCart, loading }: Props) => {
           })}
         </div>
       </div>
-    </div>
+    </div><Footer></Footer></>
   );
 };
 

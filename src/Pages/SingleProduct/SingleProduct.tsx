@@ -17,7 +17,7 @@ const SingleProduct = ({ products, loadSingleProduct }: Props) => {
     }, [loadSingleProduct]);
 
     return (
-        <div className="bg-white">
+        <div className="bg-transparent">
             <div className="pt-6">
                 {Object.keys(products).length > 0 &&
                     <SPP  {...products} />

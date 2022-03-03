@@ -2,10 +2,13 @@ import Rating from '@components/Rating';
 import Breadcrumb from '@components/Breadcrumbs';
 import React from 'react'
 import { ProductType } from 'types/productsTypes';
+import Header from '@components/Header';
+import Footer from '@components/Footer';
 
 const SPP = ({ title, price, rating, description, category, image, id, }: ProductType) => {
     return (
         <>
+        <Header></Header>
             <Breadcrumb category={category} title={title} />
             <div className="flex w-full flex-col lg:flex-row">
                 <div className="aspect-w-4 aspect-h-5 sm:rounded-lg sm:overflow-hidden p-5 lg:w-1/2">
@@ -38,7 +41,7 @@ const SPP = ({ title, price, rating, description, category, image, id, }: Produc
                         <p className="text-base text-gray-900 md:my-24 lg:m-0">{description}</p>
                     </div>
 
-                    <div className="fixed md:absolute bg-indigo-500 left-0 bottom-0 w-full p-3 text-center md:w-1/2 md:right-0 md:left-auto md:rounded-md md:mt-5 text-white uppercase text-bold">
+                    <div className="fixed relative m-2 h-50% bg-transparent border-solid border-2 border-zinc-200 left-0 bottom-0 w-full p-3 text-center text-black uppercase text-bold">
                         <a
                             href="#"
                             className="font-bold"
@@ -48,6 +51,7 @@ const SPP = ({ title, price, rating, description, category, image, id, }: Produc
                     </div>
                 </div>
             </div>
+            <Footer></Footer>
         </>
     )
 }
