@@ -1,87 +1,4 @@
 {
-  "users": [
-    {
-      "email": "yagnesh.modh@gmail.com",
-      "password": "$2a$10$Yn6dAVpdTK3VwKZ9Kr6Sx.Mzpy81Dbs42JKZ0NlbJzY.sJOAy3Nca",
-      "name": "Yagnesh Modh",
-      "gender": "male",
-      "confirmPassword": "abcd",
-      "id": 1
-    },
-    {
-      "email": "dsp.ce28@gmail.com",
-      "password": "$2a$10$n/WZrt0DQmToT1GEqRxPEOxTtGwoxV7OljxCDIXuuHXr5IGsxpPd2",
-      "name": "Shreya",
-      "gender": "female",
-      "confirmPassword": "abcd",
-      "id": 2
-    },
-    {
-      "email": "test@test.com",
-      "password": "$2a$10$KDHQCxgZ4T14vuUD.5IKr.UN2kH9OpHTTDC405E1iydOiApm9Ppf.",
-      "name": "Yagnesh Modh",
-      "gender": "male",
-      "id": 3
-    },
-    {
-      "email": "test@test1.com",
-      "password": "$2a$10$/zxDFnqFBaVvk1F1Zlscmuzn8OMqVjnKeh8ikVgfJqarbV1RYi4AK",
-      "name": "Yagnesh Modh",
-      "gender": "male",
-      "id": 4
-    },
-    {
-      "email": "hafis636@gmail.com",
-      "password": "$2a$10$IQH/0teW.O6Ntaxu8mxSA./w.rDEeJwdtwwF1BUNHi4Y4bZNSKgKi",
-      "name": "Hafis Ahamed",
-      "gender": "male",
-      "id": 5
-    }
-  ],
-  "todo-list": [
-    {
-      "text": "adfasdf",
-      "isDone": true,
-      "timeStamp": "12-20-21 12:04",
-      "id": 1
-    },
-    {
-      "text": "asdfadsf",
-      "isDone": true,
-      "timeStamp": "12-20-21 12:04",
-      "id": 2
-    },
-    {
-      "text": "aasfdasfs",
-      "isDone": true,
-      "timeStamp": "12-20-21 12:04",
-      "id": 3
-    },
-    {
-      "text": "asdfdas",
-      "isDone": false,
-      "timeStamp": "12-20-21 01:53",
-      "id": 4
-    },
-    {
-      "text": "asdfdasf",
-      "isDone": false,
-      "timeStamp": "12-20-21 01:54",
-      "id": 5
-    },
-    {
-      "text": "asfdsaf",
-      "isDone": false,
-      "timeStamp": "12-20-21 01:54",
-      "id": 6
-    },
-    {
-      "text": "asdfdasf",
-      "isDone": false,
-      "timeStamp": "12-20-21 01:55",
-      "id": 7
-    }
-  ],
   "products": [
     {
       "id": 1,
@@ -89,6 +6,8 @@
       "price": 109.95,
       "description": "A sensual floral with a mysterious character. Luminous magnolia and a duet of roses.A decadent heart of sweet and petaly Rose de Mai, warmed by the spicy opulence of Rose Damascena, draped in sensuous patchouli and warm amber.",
       "category": "Colognes",
+      "size": 30,
+      "unit": "ML",
       "image": "https://www.jomalone.com/media/export/cms/products/1000x1000/jo_sku_LFFN01_1000x1000_0.png",
       "rating": {
         "rate": 3.9,
@@ -101,6 +20,8 @@
       "price": 22.3,
       "description": "Darkest Damask rose. Rich and textural, wrapped with smoky oud wood. Spiked with clove, decadent with praline.",
       "category": "Colognes",
+      "size": 35,
+      "unit": "ML",
       "image": "https://www.jomalone.com/media/export/cms/products/1000x1000/jo_sku_LFFP01_1000x1000_0.png",
       "rating": {
         "rate": 4.1,
@@ -113,6 +34,8 @@
       "price": 55.99,
       "description": "Retreat into a decadent sanctuary with a warm and intoxicating scent. The velvet texture of darkest Damask rose in full bloom. Crafted in the English countryside in a special-edition glass design. Burn time approx. 45 hours. Wax height 4.78cm, width 7.5cm.",
       "category": "Colognes",
+      "size": 30,
+      "unit": "ML",
       "image": "https://www.jomalone.com/media/export/cms/products/1000x1000/jo_sku_LGAA01_1000x1000_0.png",
       "rating": {
         "rate": 4.7,
@@ -125,6 +48,8 @@
       "price": 15.99,
       "description": "A sparkling selection of Jo Malone London favourites in 9ml. Includes zesty Lime Basil & Mandarin, mellow English Pear & Freesia, mesmerising Wild Bluebell, luscious Fig & Lotus Flower and windswept Wood Sage & Sea Salt. Picked to be worn solo or paired together to create a unique Scent Pairing.",
       "category": "Colognes",
+      "size": 10,
+      "unit": "ML",
       "image": "https://www.jomalone.com/media/export/cms/products/1000x1000/jo_sku_L64T01_1000x1000_0.png",
       "rating": {
         "rate": 2.1,
@@ -137,6 +62,8 @@
       "price": 695,
       "description": "Three ways to enjoy a favourite Jo Malone London scent. Unwind with the golden fruity notes of English Pear & Freesia in a refreshing Body & Hand Wash (100ml) and rich Body Crème (50ml), before spritzing the timeless Cologne (30ml).",
       "category": "Colognes",
+      "size": 5,
+      "unit": "ML",
       "image": "https://www.jomalone.com/media/export/cms/products/1000x1000/jo_sku_LF2P01_1000x1000_0.png",
       "rating": {
         "rate": 4.6,
@@ -149,6 +76,8 @@
       "price": 168,
       "description": "A fragrant introduction to our most-loved products, in three signature scents and travel-friendly sizes. Discover the spirited fragrance of Wood Sage & Sea Salt Cologne, treat skin to the luxuriously rich Peony & Blush Suede Body Crème and set the scene with a mellow English Pear & Freesia Miniature Candle.This gift collection contains: Wood Sage & Sea Salt Cologne 9ml Peony & Blush Suede Body Crème 15ml English Pear & Freesia Miniature Candle 35g",
       "category": "Colognes",
+      "size": 5,
+      "unit": "ML",
       "image": "https://www.jomalone.com/media/export/cms/products/1000x1000/jo_sku_LCJW01_1000x1000_0.png",
       "rating": {
         "rate": 3.9,
@@ -161,6 +90,8 @@
       "price": 9.99,
       "description": "Discover Jo Malone London’s curated collection of English Pear & Freesia favourites. Start the day with a scented shower and the mellow Body & Hand Wash, before treating post-shower skin to a luxurious layer of Body Crème. Follow with a spritz of Hair Mist to finish your fragrant ritual.This gift collection contains: English Pear & Freesia Body & Hand Wash 100ml English Pear & Freesia Body Crème 50ml English Pear & Freesia Hair Mist",
       "category": "Colognes",
+      "size": 7,
+      "unit": "ML",
       "image": "https://www.jomalone.com/media/export/cms/products/1000x1000/jo_sku_LCKR01_1000x1000_0.png",
       "rating": {
         "rate": 3,
@@ -173,6 +104,8 @@
       "price": 10.99,
       "description": "The essence of modern romance. Inspired by a voluptuous blend of seven of the world's most exquisite roses. With crushed violet leaves and a hint of lemon, it unfolds like a bouquet of freshly cut flowers. Clear and romantic.",
       "category": "Colognes",
+      "size": 10,
+      "unit": "ML",
       "image": "https://www.jomalone.com/media/export/cms/products/1000x1000/jo_sku_L08801_1000x1000_0.png",
       "rating": {
         "rate": 1.9,
@@ -185,6 +118,8 @@
       "price": 64,
       "description": "The essence of modern romance. Inspired by a voluptuous blend of seven of the world's most exquisite roses. With crushed violet leaves and a hint of lemon, it unfolds like a bouquet of freshly cut flowers. Clear and romantic.",
       "category": "Colognes",
+      "size": 30,
+      "unit": "ML",
       "image": "https://www.jomalone.com/media/export/cms/products/1000x1000/jo_sku_L08E01_1000x1000_0.png",
       "rating": {
         "rate": 3.3,
@@ -197,6 +132,8 @@
       "price": 109,
       "description": "Darkest Damask rose. Rich and textural, wrapped with smoky oud wood. Spiked with clove, decadent with praline. Magnetic",
       "category": "Colognes",
+      "size": 20,
+      "unit": "ML",
       "image": "https://www.jomalone.com/media/export/cms/products/1000x1000/jo_sku_L5FW01_1000x1000_0.png",
       "rating": {
         "rate": 2.9,
@@ -209,6 +146,8 @@
       "price": 109,
       "description": "Darkest Damask rose. Rich and textural, wrapped with smoky oud wood. Spiked with clove, decadent with praline. Magnetic..",
       "category": "Colognes",
+      "size": 35,
+      "unit": "ML",
       "image": "https://www.jomalone.com/media/export/cms/products/1000x1000/jo_sku_L32N01_1000x1000_0.png",
       "rating": {
         "rate": 4.8,
@@ -221,6 +160,8 @@
       "price": 114,
       "description": "Retreat into a decadent sanctuary with a warm and intoxicating scent. The velvet texture of the darkest Damask rose in full bloom. Burn time approx. 45 hours. Wax height 4.78cm, width 5cm.",
       "category": "colognes",
+      "size": 50,
+      "unit": "ML",
       "image": "https://www.jomalone.com/media/export/cms/products/1000x1000/jo_sku_L3X601_1000x1000_0.png",
       "rating": {
         "rate": 4.8,
@@ -233,6 +174,8 @@
       "price": 599,
       "description": "Fill the air with a bright burst of freshly cut roses. A voluptuous blend of exquisite roses with a hint of bright lemon. Crafted in the English countryside in a signature glass design. Burn time approx. 45 hours. Lid included. Wax height 4.78cm, width 7.5cm.",
       "category": "Colognes",
+      "size": 250,
+      "unit": "ML",
       "image": "https://www.jomalone.com/media/export/cms/products/1000x1000/jo_sku_L28A01_1000x1000_0.png",
       "rating": {
         "rate": 2.9,
@@ -245,6 +188,8 @@
       "price": 999.99,
       "description": "Retreat into a decadent sanctuary with a warm and intoxicating scent. The velvet texture of the darkest Damask rose in full bloom. Crafted in the English countryside in a black glass design. Burn time approx. 90 hours. Lid included. Wax height 8cm, width 11.6cm.",
       "category": "Colognes",
+      "size": 500,
+      "unit": "ML",
       "image": "https://www.jomalone.com/media/export/cms/products/1000x1000/jo_sku_LAMF01_1000x1000_0.png",
       "rating": {
         "rate": 2.2,
@@ -257,6 +202,8 @@
       "price": 56.99,
       "description": "Envelop your home in the decadent scent of Velvet Rose & Oud. This sleek and elegant Cologne Intense Diffuser uses expertly-developed fragrance oils to diffuse the scent of darkest Damask Rose – famed for its floral allure. Bring this magnetic and voluptuous fragrance into your home with an opulent stream of continuous scent. We recommend using all 10 reeds for optimum fragrance diffusion.",
       "category": "Colognes",
+      "size": 40,
+      "unit": "ML",
       "image": "https://www.jomalone.com/media/export/cms/products/1000x1000/jo_sku_L92X01_1000x1000_0.png",
       "rating": {
         "rate": 2.6,
@@ -269,6 +216,8 @@
       "price": 29.95,
       "description": "Fill the air with a bright burst of freshly cut roses. A voluptuous blend of exquisite roses with a hint of bright lemon. Includes 10 rattan reeds to release scent continuously. For optimum effect use all 10 simultaneously.",
       "category": "Colognes",
+      "size": 15,
+      "unit": "ML",
       "image": "https://www.jomalone.com/media/export/cms/products/1000x1000/jo_sku_L2W701_1000x1000_0.png",
       "rating": {
         "rate": 2.9,
@@ -281,6 +230,8 @@
       "price": 39.99,
       "description": "Scent your hair with our lightweight Hair Mist. Infused with Velvet Rose & Oud, our decadent and magnetic Cologne Intense. Suitable for coloured hair, the mist is formulated with naturally-derived Argan Oil, Pro Vitamin B and Vitamin E and enriched with nourishing and softening ingredients, giving hair a healthy shine and rich, sensual scent. A playful finishing touch for your hair.",
       "category": "Colognes",
+      "size": 20,
+      "unit": "ML",
       "image": "https://www.jomalone.com/media/export/cms/products/1000x1000/jo_sku_LA4001_1000x1000_0.png",
       "rating": {
         "rate": 3.8,
@@ -293,6 +244,8 @@
       "price": 9.85,
       "description": "The essence of modern romance, inspired by a voluptuous blend of seven of the world’s most exquisite roses. With crushed violet leaves and a hint of lemon, it unfolds like a bouquet of freshly cut flowers. Enriched with coconut oil, our Body & Hand Lotion is readily absorbed to instantly hydrate and condition, while its fragrance-diffusing properties help to radiate scent from the skin.",
       "category": "Colognes",
+      "size": 10,
+      "unit": "ML",
       "image": "https://www.jomalone.com/media/export/cms/products/1000x1000/jo_sku_L4R501_1000x1000_0.png",
       "rating": {
         "rate": 4.7,
@@ -305,6 +258,8 @@
       "price": 7.95,
       "description": "Our refreshing Body & Hand Wash with meadow foam seed gently cleanses and deliciously scents your skin with romantic Red Roses. With crushed violet leaves and a hint of lemon, it unfolds like a bouquet of freshly cut flowers. The enhanced formula helps leave body and hands feeling conditioned and soft. Its crystal clear gel transforms into a rich lather and its uplifting fragrance fills the bathroom, immersing you in delicate scent.",
       "category": "Colognes",
+      "size": 5,
+      "unit": "ML",
       "image": "https://www.jomalone.com/media/export/cms/products/1000x1000/jo_sku_L6AF01_1000x1000_0.png",
       "rating": {
         "rate": 4.5,
@@ -317,6 +272,8 @@
       "price": 12.99,
       "description": "The essence of modern romance. Inspired by a voluptuous blend of seven of the world's most exquisite roses. With crushed violet leaves and a hint of lemon, it unfolds like a bouquet of freshly cut flowers. Surprisingly clean and sheer. For a sumptuous bathing treat, our Bath Oil is enriched with sweet almond, jojoba seed and avocado oils, which are natural conditioners that help soften and nourish the skin, while sublime fragrances fill the air and scent your skin.",
       "category": "Colognes",
+      "size": 70,
+      "unit": "ML",
       "image": "https://www.jomalone.com/media/export/cms/products/1000x1000/jo_sku_L4Y601_1000x1000_0.png",
       "rating": {
         "rate": 3.6,
@@ -331,9 +288,14 @@
       "id": 1
     },
     {
-      "productId": 1,
+      "productId": 3,
       "quantity": 1,
       "id": 2
+    },
+    {
+      "productId": 4,
+      "quantity": 1,
+      "id": 3
     }
   ]
 }

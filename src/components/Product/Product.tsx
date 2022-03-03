@@ -1,6 +1,5 @@
 import React, { ChangeEvent, memo, useState } from 'react';
 import { ProductType } from 'types/productsTypes';
-import CustomPopup from "@components/Popup";
 import { CartType } from 'types/cartTypes';
 
 export type ProductProps = {
@@ -16,6 +15,8 @@ export type ProductProps = {
 const Product = ({
   title,
   price,
+  size,
+  unit,
   rating,
   description,
   category,
@@ -59,6 +60,9 @@ const Product = ({
               style: 'currency',
               currency: 'USD',
             }).format(price)}
+          </p>
+          <p className="mt-1 text-lg mb-5 text-stone-900 text-center">
+              {size} <span className='lowercase'>{unit}</span>
           </p>
           <div className="fixed relative m-2 h-50% bg-transparent border-solid border-2 border-zinc-200 left-0 bottom-0 w-full p-3 text-center text-white uppercase text-bold">
               <button className="text-stone-900" > Quick Shop</button>

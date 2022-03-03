@@ -1,8 +1,6 @@
 import Product from '@components/Product';
 import React, { memo, useEffect } from 'react';
 import { ProductType } from 'types/productsTypes';
-import Header from "@components/Header";
-import Footer from "@components/Footer";
 
 type Props = {
   products: ProductType[];
@@ -18,7 +16,6 @@ const Home = ({ products, loadProducts, loadCart, loading }: Props) => {
   }, [loadProducts, loadCart]);
 
   return (
-    <><Header></Header>
     <div className="bg-transparent">
       <div className="mx-auto px-4 sm:px-6 lg:max-w-7xl lg:px-8">
 
@@ -33,7 +30,7 @@ const Home = ({ products, loadProducts, loadCart, loading }: Props) => {
           })}
         </div>
       </div>
-    </div><Footer></Footer></>
+    </div>
   );
 };
 
