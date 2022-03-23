@@ -1,15 +1,9 @@
-import { AuthContext } from 'context/authContext';
 import ContainerLayout from './Layout/ContainerLayout';
 
 import React, { lazy, Suspense, useContext, useEffect } from 'react';
 import { Route, Routes, useNavigate } from 'react-router-dom';
-import AuthLayout from './Layout/AuthLayout';
-import MainLayout from './Layout/MainLayout';
-
 
 const Home = lazy(() => import('./Pages/Home'));
-const Login = lazy(() => import('./Pages/Login'));
-const Register = lazy(() => import('./Pages/Register'));
 const NotFound = lazy(() => import('./Pages/NotFound'));
 const Cart = lazy(() => import('./Pages/Cart'));
 const Order = lazy(() => import('./Pages/Order'));

@@ -1,6 +1,7 @@
 import React, { ChangeEvent, memo, useState } from 'react';
 import { ProductType } from 'types/productsTypes';
 import { CartType } from 'types/cartTypes';
+import Popup from '@components/Popup';
 
 export type ProductProps = {
   addCartItem: (productId: number) => void;
@@ -30,14 +31,7 @@ const Product = ({
   updateLoading,
   deleteLoading,
 }: ProductProps) => {
-
-  const changeQuantity = (event: ChangeEvent<HTMLSelectElement>) => {
-    if (cartItem) {
-      updateCartItem({ ...cartItem, quantity: Number(event.target.value) });
-    }
-  };
-  
-        
+       
   return (
     <div key={id} className="group relative">
       <div className="w-full min-h-80 bg-gray-200 aspect-w-1 rounded-md overflow-hidden group-hover:opacity-75 lg:aspect-none">
@@ -64,9 +58,8 @@ const Product = ({
           <p className="mt-1 text-lg mb-5 text-stone-900 text-center">
               {size} <span className='lowercase'>{unit}</span>
           </p>
-          <div className="fixed relative m-2 h-50% bg-transparent border-solid border-2 border-zinc-200 left-0 bottom-0 w-full p-3 text-center text-white uppercase text-bold">
-              <button className="text-stone-900" > Quick Shop</button>
-          </div>
+          
+          <Popup></Popup>
         </div>
       </div>
     </div>

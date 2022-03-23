@@ -38,6 +38,13 @@ const SPP = ({ title, price, rating, description, category, image, id, addCartIt
                             <Rating {...rating} />
                         </div>
                     </div>
+                    <select className="mt-1 block w-2/6 py-2 px-3 w-full border border-gray-300 bg-[#FCF9EE]">
+                        {[...Array(6).keys()].map((x) => (
+                            <option key={x} value={x + 1}>
+                                {x + 1}
+                            </option>
+                        ))}
+                    </select>
                     <div className="space-y-6">
                         <p className="text-base text-gray-900 md:my-24 lg:m-0">{description}</p>
                     </div>

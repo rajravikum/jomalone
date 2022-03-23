@@ -30,7 +30,7 @@ const Cart = ({ loadCart, loadProducts, products }: Props) => {
     };
     return (
         <div className="container p-12 mx-auto">
-            <h1 className='text-center font-bold text-3xl'>Shopping Bag</h1>
+            <h1 className='text-center font-bold text-3xl'>Shopping Bag({totalCount})</h1>
             <div className="flex flex-col w-full px-0 mx-auto md:flex-row">
                 <div className="flex flex-col md:w-full">
                     <div className="pt-12 md:pt-0 2xl:ps-4">
