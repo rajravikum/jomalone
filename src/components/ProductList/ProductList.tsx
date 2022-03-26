@@ -1,6 +1,6 @@
 import { XIcon } from '@heroicons/react/outline';
+import React from 'react';
 import { CartType } from 'types/cartTypes';
-import React from 'react'
 import { ProductType } from 'types/productsTypes';
 
 type Props = {

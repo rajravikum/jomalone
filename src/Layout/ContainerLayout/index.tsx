@@ -1,11 +1,16 @@
 import { connect } from 'react-redux'
-import { RootState } from 'types/commonTypes';
+import { LoadCartRequestAction, LoadProductRequestAction } from 'reducers/loadingReducer';
+import { AppDispatch, RootState } from 'types/commonTypes';
+import Cart from '../../Pages/Cart';
 import ContainerLayout from './ContainerLayout'
-const mapStateToProps = (store: RootState) => ({
-    quantity: store.cart.reduce((p, c) => p + c.quantity, 0),
-    error: store.error,
-    isUserExist: Object.keys(store.user).length > 0,
+const mapStateToProps = ({cart,products}: RootState) => ({
+    quantity: cart.reduce((p, c) => p + c.quantity, 0),
+    cart,
 });
-const mapDispatchToProps = {}
+const mapDispatchToProps = (dispatch: AppDispatch) => ({
+    loadProducts: () => dispatch(LoadProductRequestAction()),
+    loadCart: () => dispatch(LoadCartRequestAction()),
+
+})
 
 export default connect(mapStateToProps, mapDispatchToProps)(ContainerLayout);

@@ -5,7 +5,7 @@ module.exports = {
   theme: {
     extend: {
       screens: { 'sm': { 'max': '640px' } },
-      height: {'800': '800px'},
+      height: {'800': '800px', '450' : '450px'},
     },
   },
   plugins: [],
