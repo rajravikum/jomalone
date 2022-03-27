@@ -1,7 +1,6 @@
 import { AppDispatch, RootState } from 'types/commonTypes';
 import { connect } from 'react-redux';
 import Home from './Home';
-import Header from "@components/Header";
 import {
   LoadCartRequestAction,
   LoadProductRequestAction,

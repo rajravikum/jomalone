@@ -298,34 +298,14 @@
       "id": 3
     },
     {
-      "productId": 1,
+      "productId": 12,
       "quantity": 1,
       "id": 4
     },
     {
-      "productId": 8,
+      "productId": 2,
       "quantity": 1,
       "id": 5
-    },
-    {
-      "productId": 4,
-      "quantity": 1,
-      "id": 6
-    },
-    {
-      "productId": 20,
-      "quantity": 1,
-      "id": 7
-    },
-    {
-      "productId": 4,
-      "quantity": 1,
-      "id": 8
-    },
-    {
-      "productId": 4,
-      "quantity": 1,
-      "id": 9
     }
   ]
 }

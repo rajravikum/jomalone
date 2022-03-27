@@ -1,15 +1,25 @@
+import React, { memo, useEffect } from 'react';
 import Rating from '@components/Rating';
-import Breadcrumb from '@components/Breadcrumbs';
-import React from 'react'
 import { ProductType } from 'types/productsTypes';
+
+
 export type ProductProps = {
     addCartItem: (productId: number) => void;
     cartStatus: number;
+    products: ProductType[];
+    loadProducts: () => void;
+    loadCart: () => void;
 } & ProductType;
-const SPP = ({ title, price, rating, description, category, image, id, addCartItem, cartStatus, size, unit }: ProductProps) => {
+
+
+const SPP = ({ title, price, rating, description, category, image, id,
+     addCartItem, cartStatus, size, unit, loadProducts, loadCart }: ProductProps) => {
+        useEffect(() => {
+            loadProducts();
+            loadCart();
+          }, [loadProducts, loadCart]);
     return (
-        <>
-            <Breadcrumb category={category} title={title} />
+        
             <div className="flex w-full flex-col lg:flex-row sm:h-[800px]">
                 <div className="aspect-w-4 aspect-h-5 sm:rounded-lg p-5 lg:w-1/2">
                     <img
@@ -57,8 +67,7 @@ const SPP = ({ title, price, rating, description, category, image, id, addCartIt
                     </div>
                 </div>
             </div>
-        </>
     )
 }
 
-export default SPP;
+export default memo(SPP);
