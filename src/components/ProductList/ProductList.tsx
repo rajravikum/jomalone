@@ -1,21 +1,18 @@
 import { XIcon } from '@heroicons/react/outline';
-import React from 'react';
+import React from 'react'
 import { CartType } from 'types/cartTypes';
-import { ProductType } from 'types/productsTypes';
 
 type Props = {
     image: string;
     title: string;
     price: number;
     id: number;
+    cart: CartType[];
     size: number;
     unit: string;
 }
-export type ProductProps = {
-    deleteCartItem: (cartItem: CartType) => void;
-    cartStatus: number;
-} & ProductType;
-const ProductList = ({ image, title, price, id, size, unit, deleteCartItem }: Props) => {
+
+const ProductList = ({ image, title, price, id, size, unit, deleteCartItem, cart }: Props) => {
     return (<div className="flex border p-10 rounded-md space-x-4 w-full item-center align-center">
         <div className='w-1/6 mr-2'>
             <img src={image} alt={title} className="w-20" />
@@ -29,7 +26,7 @@ const ProductList = ({ image, title, price, id, size, unit, deleteCartItem }: Pr
                     {size}<span className='lowercase'>{unit}</span>
                 </p>
                 <select className="mt-1 block w-1/6 py-2 px-3 border border-gray-300 bg-[#FCF9EE]">
-                    {[...Array(6).keys()].map((x) => (
+                     {[...Array(6).keys()].map((x) => (
                         <option key={x} value={x + 1}>
                             {x + 1}
                         </option>
@@ -49,7 +46,7 @@ const ProductList = ({ image, title, price, id, size, unit, deleteCartItem }: Pr
                 </p>
             </div>
         </div>
-        <div className="w-6" onClick={() => deleteCartItem(id)}>
+        <div className="w-6">
             <XIcon />
         </div>
     </div>)

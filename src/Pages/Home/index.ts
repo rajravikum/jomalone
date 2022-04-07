@@ -1,10 +1,7 @@
 import { AppDispatch, RootState } from 'types/commonTypes';
 import { connect } from 'react-redux';
 import Home from './Home';
-import {
-  LoadCartRequestAction,
-  LoadProductRequestAction,
-} from 'reducers/loadingReducer';
+import { LoadCartRequestAction, LoadProductRequestAction } from 'reducers/loadingReducer';
 
 const mapStateToProps = (store: RootState) => {
   return {

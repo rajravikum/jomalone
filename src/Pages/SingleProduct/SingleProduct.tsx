@@ -15,7 +15,7 @@ const SingleProduct = ({ products, loadSingleProduct, loadCart, cartStatus }: Pr
         loadSingleProduct(id);
         loadCart()
     }, [loadSingleProduct, loadCart]);
-
+console.log(products);
     return (
         <div className="bg-[#FCF8EF]">
             <div className="pt-6">

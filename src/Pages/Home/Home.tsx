@@ -1,6 +1,7 @@
 import Product from '@components/Product';
 import React, { memo, useEffect } from 'react';
 import { ProductType } from 'types/productsTypes';
+import './Home.css';
 
 type Props = {
   products: ProductType[];

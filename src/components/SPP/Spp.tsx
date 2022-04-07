@@ -1,25 +1,20 @@
 import React, { memo, useEffect } from 'react';
 import Rating from '@components/Rating';
 import { ProductType } from 'types/productsTypes';
-
+import './Spp.css';
 
 export type ProductProps = {
     addCartItem: (productId: number) => void;
     cartStatus: number;
     products: ProductType[];
-    loadProducts: () => void;
+    loadSingleProduct: (id: number,) => void;
     loadCart: () => void;
 } & ProductType;
 
 
-const SPP = ({ title, price, rating, description, category, image, id,
-     addCartItem, cartStatus, size, unit, loadProducts, loadCart }: ProductProps) => {
-        useEffect(() => {
-            loadProducts();
-            loadCart();
-          }, [loadProducts, loadCart]);
+const SPP = ({ title, price, rating, description, image, id,
+     addCartItem, cartStatus, size, unit }: ProductProps) => {
     return (
-        
             <div className="flex w-full flex-col lg:flex-row sm:h-[800px]">
                 <div className="aspect-w-4 aspect-h-5 sm:rounded-lg p-5 lg:w-1/2">
                     <img

@@ -7,6 +7,7 @@ const mapStateToProps = ({ products, cart }: RootState) => {
     return {
         products,
         cartStatus: cart.findIndex((x) => { return x.productId === products?.id }),
+        cart
 
     };
 };

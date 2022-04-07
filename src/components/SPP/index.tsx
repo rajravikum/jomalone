@@ -1,6 +1,6 @@
 import { connect } from 'react-redux'
 import { AddCartItemRequestAction } from 'reducers/loadingReducer';
-import { LoadCartRequestAction, LoadProductRequestAction } from 'reducers/loadingReducer';
+import { LoadCartRequestAction, LoadSingleProductRequestAction } from 'reducers/loadingReducer';
 import { AppDispatch, RootState } from 'types/commonTypes';
 import SPP from './Spp';
 
@@ -13,7 +13,7 @@ const mapStateToProps = (store: RootState) => {
 
 const mapDispatchToProps = (dispatch: AppDispatch) => {
     return {
-      loadProducts: () => dispatch(LoadProductRequestAction()),
+      loadSingleProduct: (productId: number) => dispatch(LoadSingleProductRequestAction(productId)),
       loadCart: () => dispatch(LoadCartRequestAction()),
       addCartItem: (productId: number) => dispatch(AddCartItemRequestAction(productId)),
     };
