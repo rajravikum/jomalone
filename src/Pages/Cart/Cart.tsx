@@ -1,8 +1,5 @@
-import ProductListingItem from '@components/ProductList/ProductList';
-import Product from 'components/Product/Product';
 import Panel from '@components/Panel/Panel';
 import React, { memo, useEffect } from 'react';
-import { CartType } from 'types/cartTypes';
 import { ProductType } from 'types/productsTypes';
 import ProductList from '@components/ProductList';
 

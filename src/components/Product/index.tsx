@@ -12,17 +12,11 @@ import {
 const mapStateToProps = (state: RootState, props: ProductType) => ({
   cartItem: state.cart?.find((x) => x.productId === props.id),
   addLoading: state.loading[`ADD_CART_ITEM_${props.id}`],
-  updateLoading: state.loading[`UPDATE_CART_ITEM_${props.id}`],
-  deleteLoading: state.loading[`DELETE_CART_ITEM_${props.id}`],
 });
 
 const mapDispatchToProps = (dispatch: AppDispatch) => ({
   addCartItem: (productId: number) =>
     dispatch(AddCartItemRequestAction(productId)),
-  updateCartItem: (cartItem: CartType) =>
-    dispatch(UpdateCartItemRequestAction(cartItem)),
-  deleteCartItem: (cartItem: CartType) =>
-    dispatch(deleteCartItemRequestAction(cartItem)),
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(Product);

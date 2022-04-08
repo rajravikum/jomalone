@@ -12,7 +12,7 @@ type Props = {
     unit: string;
 }
 
-const ProductList = ({ image, title, price, id, size, unit, deleteCartItem, cart }: Props) => {
+const ProductList = ({ image, title, price, id, size, unit}: Props) => {
     return (<div className="flex border p-10 rounded-md space-x-4 w-full item-center align-center">
         <div className='w-1/6 mr-2'>
             <img src={image} alt={title} className="w-20" />
